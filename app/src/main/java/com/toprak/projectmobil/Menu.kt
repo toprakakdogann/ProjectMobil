@@ -3,10 +3,14 @@ package com.toprak.projectmobil
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.PopupMenu
 import com.google.android.material.snackbar.Snackbar
+import java.util.*
+import kotlin.concurrent.timerTask
 import kotlin.system.exitProcess
 
 class Menu : AppCompatActivity() {
@@ -53,8 +57,20 @@ class Menu : AppCompatActivity() {
         }
         val imageView = findViewById<ImageView>(R.id.close)
         imageView.setOnClickListener{
-            moveTaskToBack(true);
-            exitProcess(-1)
+            Snackbar.make(it,"Uygulama kapatılıyor", Snackbar.LENGTH_SHORT)
+                .setAction("", View.OnClickListener {
+                    moveTaskToBack(true);
+                    exitProcess(-1)
+                }).setDuration(3000)
+                .show()
+
+            val timer = Timer()
+            timer.schedule(timerTask {
+                moveTaskToBack(true);
+                exitProcess(-1)
+            }, 3100)
+
+
 
         }
 

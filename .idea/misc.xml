@@ -3,13 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/bg.xml" value="0.204" />
+        <entry key="app/src/main/res/layout/activitiy_custom_toast.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_alert.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_biraz_hareket.xml" value="0.11197916666666667" />
+        <entry key="app/src/main/res/layout/activity_gorunur_gorunmez.xml" value="0.24583333333333332" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23229166666666667" />
         <entry key="app/src/main/res/layout/activity_menu.xml" value="0.2120208740234375" />
         <entry key="app/src/main/res/layout/activity_renkler.xml" value="0.16473846435546877" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.24635416666666668" />
-        <entry key="app/src/main/res/layout/activity_toast_olusturma.xml" value="0.11197916666666667" />
+        <entry key="app/src/main/res/layout/activity_toast_olusturma.xml" value="0.252886454264323" />
         <entry key="app/src/main/res/layout/alertdesign.xml" value="0.1598731884057971" />
         <entry key="app/src/main/res/layout/fragment_fragment.xml" value="0.251129150390625" />
         <entry key="app/src/main/res/layout/fragment_fragment1.xml" value="0.1" />

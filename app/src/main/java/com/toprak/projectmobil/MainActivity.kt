@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
             if(isim == "Toprak AKDOGAN" && numara == "02185076003") {
                 val giris = Intent(applicationContext,Menu::class.java)
                 startActivity(giris)
+                Toast.makeText(this, "Giriş Yapıldı", Toast.LENGTH_SHORT).show();
             } else if(TextUtils.isEmpty(isim)) {
                 val ad = AlertDialog.Builder(this)
                 ad.setTitle("Hata")

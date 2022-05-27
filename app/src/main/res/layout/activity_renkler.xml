@@ -5,30 +5,100 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#03A9F4"
+    android:backgroundTint="#03A9F4"
+    android:orientation="vertical"
     tools:context=".Renkler">
 
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="29dp"
+        android:background="#03A9F4"
+        android:backgroundTint="#03A9F4"
+        android:gravity="center"
+        android:text="Menü"
+        android:textColor="#FEFDFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <LinearLayout
+        android:id="@+id/fragmentContainerView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/renk"
             android:layout_width="match_parent"
-            android:layout_height="88dp" />
-
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Button" />
+            android:layout_marginTop="30dp"
+            android:enabled="true"
+            android:gravity="center"
+            android:text="Yazı Rengi"
+            android:textColor="#555555"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:visibility="visible" />
 
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/fragmentContainerView"
-            android:name="com.toprak.projectmobil.fragment"
+        <Spinner
+            android:id="@+id/spinner"
             android:layout_width="match_parent"
-            android:layout_height="680dp" />
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/arkaplan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Yazı Arkaplan Rengi"
+            android:textColor="#555555"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Fragment Arkaplan Rengi"
+            android:textColor="#555555"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/isim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center|center_horizontal"
+            android:text="Toprak AKDOGAN"
+            android:textColor="#03A9F4"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/numara"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:gravity="center|center_horizontal"
+            android:text="02185076003"
+            android:textColor="#03A9F4"
+            android:textSize="30dp" />
     </LinearLayout>
 
 </LinearLayout>

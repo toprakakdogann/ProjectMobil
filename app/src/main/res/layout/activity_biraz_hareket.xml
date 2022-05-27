@@ -4,7 +4,73 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#03A9F4"
     tools:context=".BirazHareket">
 
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="127dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="109dp"
+        android:background="#03A9F4"
+        android:backgroundTint="#03A9F4"
+        android:text="Menü"
+        android:textColor="#FEFDFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/suruklebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="34dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/surukleview"
+        app:layout_constraintStart_toEndOf="@+id/surukleview" />
+
+    <TextView
+        android:id="@+id/surukleview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginBottom="282dp"
+        android:clickable="true"
+        android:minHeight="48dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="0dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="81dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/surukleview"
+        app:layout_constraintEnd_toStartOf="@+id/surukletxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button1"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/surukletxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="26dp"
+        android:clickable="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Toprak"
+        app:layout_constraintBottom_toBottomOf="@+id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
