@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/anaMenu"
+        android:title="Ana Sayfa">
+    </item>
+    <item
+        android:id="@+id/renkler"
+        android:title="Renkler">
+    </item>
+    <item
+        android:id="@+id/hareket"
+        android:title="Biraz Hareket">
+    </item>
+    <item
+        android:id="@+id/gorunur"
+        android:title="Görünür-Görünmez">
+    </item>
+    <item
+        android:id="@+id/toast"
+        android:title="Toast Mesajı Oluşturma">
+    </item>
+
+</menu>
